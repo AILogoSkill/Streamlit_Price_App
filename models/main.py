@@ -56,11 +56,11 @@ with open (PATH_UNIQUE_VALUES, "r") as file:
 building_type = st.sidebar.selectbox('Building type', (dict_unique['building_type']))
 object_type = st.sidebar.selectbox("Object type", (dict_unique["object_type"]))
 level= st.sidebar.slider(
-    "Level", min_values=min(dict_unique["level"]), max_value=max(dict_unique["level"])
+    "Level", min_value=min(dict_unique["level"]), max_value=max(dict_unique["level"])
 )
 
 levels= st.sidebar.slider(
-    "Levels", min_values=min(dict_unique["levels"]), max_value=max(dict_unique["levels"])
+    "Levels", min_value=min(dict_unique["levels"]), max_value=max(dict_unique["levels"])
 )
 
 rooms = st.sidebar.selectbox("Rooms", (dict_unique["rooms"]))
