@@ -46,7 +46,7 @@ df = load_data(PATH_DATA)
 df = transform(df)
 st.write(df[:4])
 
-st.map(data=df, latitude="geo_lat", longitude="geo_lon",colors="label_colors")
+st.map(data=df, latitude="geo_lat", longitude="geo_lon",color="label_colors")
 
 with open (PATH_UNIQUE_VALUES, "w") as file:
     dict_unique=json.dump(file)
