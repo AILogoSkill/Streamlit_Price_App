@@ -17,7 +17,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.compose import make_column_transformer
 from sklearn.pipeline import make_pipeline
 
-PATH_DATA ="all_v2.csv"
+PATH_DATA ="data/all_v2.csv"
 PATH_UNIQUE_VALUES = "data/unique_values.json"
 PATH_MODEL = "models/lr_pipeline.sav"
 
