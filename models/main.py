@@ -49,7 +49,7 @@ st.write(df[:4])
 st.map(data=df, latitude="geo_lat", longitude="geo_lon",color="label_colors")
 
 with open (PATH_UNIQUE_VALUES, "w") as file:
-    dict_unique=json.dump(file)
+    dict_unique=json.load(file)
 
 
 #features
